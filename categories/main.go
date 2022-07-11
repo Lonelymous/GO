@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"strconv"
 	"strings"
@@ -22,8 +23,8 @@ var (
 func AddCategory(parentId int, id int, name string) error {
 	parent, found := CategoryById[parentId]
 	if !found {
-		panic("Parent not found")
-		// return errors.New("Parent not found")
+		// panic("Parent not found")
+		return errors.New("Parent not found")
 	}
 	category := Category{
 		Id:       id,
