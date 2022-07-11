@@ -1,0 +1,46 @@
+{
+	"value": null,
+	"operator": "AND",
+	"left": {
+		"value": null,
+		"operator": "OR",
+		"left": {
+			"value": null,
+			"operator": "OR",
+			"left": {
+				"value": true,
+				"operator": null,
+				"left": null,
+				"right": null
+			},
+			"right": {
+				"value": null,
+				"operator": "AND",
+				"left": {
+					"value": true,
+					"operator": null,
+					"left": null,
+					"right": null
+				},
+				"right": {
+					"value": false,
+					"operator": null,
+					"left": null,
+					"right": null
+				}
+			}
+		},
+		"right": {
+			"value": false,
+			"operator": null,
+			"left": null,
+			"right": null
+		}
+	},
+	"right": {
+		"value": false,
+		"operator": null,
+		"left": null,
+		"right": null
+	}
+}

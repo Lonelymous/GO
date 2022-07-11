@@ -1,4 +1,4 @@
-module gingonic/grouter
+module main
 
 go 1.18
 
