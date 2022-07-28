@@ -79,6 +79,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 func HandlerChange(w http.ResponseWriter, r *http.Request) {
 	session := ProcessSession(w, r)
+	fmt.Println(r.Body)
 	body, err := io.ReadAll(r.Body)
 	defer r.Body.Close()
 	if err != nil {
@@ -86,6 +87,7 @@ func HandlerChange(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	bodyStr := string(body)
+	fmt.Println(bodyStr)
 	switch bodyStr {
 	case "hu", "en":
 		session.Language = bodyStr
